@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,18 +13,18 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="slidersAndRGB" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mmc-he-BZR">
-                                <rect key="frame" x="20" y="20" width="280" height="150"/>
+                                <rect key="frame" x="20" y="64" width="374" height="150"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="7PE-EJ-77O"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="center" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="ChA-j1-2f1">
-                                <rect key="frame" x="20" y="243" width="118" height="18"/>
+                                <rect key="frame" x="20" y="287" width="118" height="18"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zoL-hm-4Gb">
                                         <rect key="frame" x="0.0" y="0.0" width="29" height="18"/>
@@ -45,7 +45,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Vd7-fL-mDR">
-                                <rect key="frame" x="20" y="295" width="118.5" height="18"/>
+                                <rect key="frame" x="20" y="339" width="118.5" height="18"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GREEN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VaF-Ei-n8j">
                                         <rect key="frame" x="0.0" y="0.0" width="49" height="18"/>
@@ -66,23 +66,8 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="18" id="LNU-qx-uwR"/>
                                 </constraints>
                             </stackView>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="XLS-76-92L">
-                                <rect key="frame" x="151" y="237" width="151" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="29" id="gaz-lA-Jwc"/>
-                                </constraints>
-                            </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Kvb-zq-RJo">
-                                <rect key="frame" x="151" y="343" width="151" height="31"/>
-                            </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="JfB-d1-qNX">
-                                <rect key="frame" x="151.5" y="290" width="150.5" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="29" id="d82-BI-l8i"/>
-                                </constraints>
-                            </slider>
                             <stackView opaque="NO" contentMode="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Kee-Ip-VHN">
-                                <rect key="frame" x="20" y="349" width="118" height="18"/>
+                                <rect key="frame" x="20" y="393" width="118" height="18"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BLUE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trp-TV-kbF">
                                         <rect key="frame" x="0.0" y="0.0" width="37.5" height="18"/>
@@ -102,6 +87,24 @@
                                     <constraint firstAttribute="width" constant="118" id="4kE-6X-Z5f"/>
                                 </constraints>
                             </stackView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="XLS-76-92L">
+                                <rect key="frame" x="151" y="281" width="245" height="31"/>
+                                <connections>
+                                    <action selector="sliderRedAction" destination="BYZ-38-t0r" eventType="valueChanged" id="WWv-EU-xAu"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="JfB-d1-qNX">
+                                <rect key="frame" x="151.5" y="335" width="244.5" height="31"/>
+                                <connections>
+                                    <action selector="sliderGreenAction" destination="BYZ-38-t0r" eventType="valueChanged" id="mw9-BP-yPw"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Kvb-zq-RJo">
+                                <rect key="frame" x="151" y="389" width="245" height="31"/>
+                                <connections>
+                                    <action selector="sliderBlueAction" destination="BYZ-38-t0r" eventType="valueChanged" id="FeK-eI-yRh"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
@@ -126,6 +129,15 @@
                             <constraint firstItem="XLS-76-92L" firstAttribute="top" secondItem="mmc-he-BZR" secondAttribute="bottom" constant="67" id="yYI-9G-uoC"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueLabel" destination="CFI-BI-Bxt" id="m5o-1J-VEy"/>
+                        <outlet property="colorView" destination="mmc-he-BZR" id="e9J-7W-UN5"/>
+                        <outlet property="greenLabel" destination="BKS-uH-a0v" id="XUJ-uR-j1y"/>
+                        <outlet property="redLabel" destination="9S8-OI-mcZ" id="KVm-RJ-KVv"/>
+                        <outlet property="sliderBlue" destination="Kvb-zq-RJo" id="wZI-N3-jeW"/>
+                        <outlet property="sliderGreen" destination="JfB-d1-qNX" id="GLB-B5-iXD"/>
+                        <outlet property="sliderRed" destination="XLS-76-92L" id="GCg-Wy-kKf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
